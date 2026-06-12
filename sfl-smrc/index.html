@@ -7,7 +7,7 @@
 <title>SFLMFGrowth — South Florida Manufacturing Growth Initiative</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -52,10 +52,10 @@
     </div>
 
     <div class="stats">
+      <div class="stat reveal"><div class="num">6.4M+</div><div class="label">Regional Population Served</div></div>
       <div class="stat reveal"><div class="num">3</div><div class="label">Counties Served</div></div>
-      <div class="stat reveal"><div class="num">4</div><div class="label">Program Pillars</div></div>
+      <div class="stat reveal"><div class="num">6</div><div class="label">Program Pillars</div></div>
       <div class="stat reveal"><div class="num">Open</div><div class="label">Call for Participation</div></div>
-      <div class="stat reveal"><div class="num">SMB</div><div class="label">Manufacturer Focus</div></div>
     </div>
   </div>
 </section>
@@ -162,38 +162,54 @@
   </div>
 </section>
 
-<!-- Partner Interest -->
+<!-- Partners: logos grid + interest form -->
 <section id="partners">
-  <div class="wrap narrow">
+  <div class="wrap">
     <div class="section-head reveal">
-      <div class="kicker">For Partners</div>
-      <h2>Partner Interest</h2>
-      <p>Industry associations, academic institutions, government agencies, and service providers interested in supporting the initiative are invited to connect with us.</p>
+      <div class="kicker">Partners</div>
+      <h2>Our Partners &amp; Supporting Organizations</h2>
+      <p>Organizations that contribute to South Florida's manufacturing ecosystem through expertise, resources, and opportunities.</p>
     </div>
-    <form class="form-card reveal" name="partner-interest" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="return handleFormSubmit(event)">
-      <input type="hidden" name="form-name" value="partner-interest">
-      <p style="display:none"><label>Don't fill this out: <input name="bot-field"></label></p>
-      <div class="form-grid">
-        <div class="field"><label for="p-org">Organization name *</label><input id="p-org" name="organization" type="text" required></div>
-        <div class="field"><label for="p-name">Contact name *</label><input id="p-name" name="contact_name" type="text" required></div>
-        <div class="field"><label for="p-email">Email *</label><input id="p-email" name="email" type="email" required></div>
-        <div class="field"><label for="p-type">Partner type *</label>
-          <select id="p-type" name="partner_type" required>
-            <option value="">Select…</option>
-            <option>Industry Association</option>
-            <option>Academic Institution</option>
-            <option>Government Agency</option>
-            <option>Vendor / Service Provider</option>
-            <option>Consultant</option>
-            <option>Other</option>
-          </select>
-        </div>
+    <div class="org-grid">
+      <div class="org reveal"><div class="logobox"><img src="images/fiu.png" alt="Florida International University"></div><h3>Florida International University</h3><div class="pill">Academic</div><p>University &amp; Research Partner</p></div>
+      <div class="org reveal"><div class="logobox"><img src="https://sfl-smrc.netlify.app/images/partners/miami_dade_chamber.webp" alt="Miami Dade Chamber of Commerce"></div><h3>Miami Dade Chamber of Commerce</h3><div class="pill">Business</div><p>Regional Business Development</p></div>
+      <div class="org reveal"><div class="logobox"><img src="https://sfl-smrc.netlify.app/images/partners/idea_center.png" alt="Miami Dade College Idea Center"></div><h3>Miami Dade College Idea Center</h3><div class="pill">Education</div><p>Innovation &amp; Entrepreneurship Hub</p></div>
+      <div class="org reveal"><div class="logobox"><img src="https://sfl-smrc.netlify.app/images/partners/CITD.svg" alt="Center for International Trade Development - Miami"></div><h3>Center for International Trade Development - Miami</h3><div class="pill">Export</div><p>International Trade Support</p></div>
+      <div class="org reveal"><div class="logobox"><img src="https://sfl-smrc.netlify.app/images/partners/trimerge.webp" alt="TriMerge Consulting Group"></div><h3>TriMerge Consulting Group</h3><div class="pill">Consulting</div><p>Program Leadership &amp; Management</p></div>
+      <div class="org reveal"><div class="logobox"><img src="https://sfl-smrc.netlify.app/images/partners/sba.png" alt="Small Business Administration"></div><h3>Small Business Administration</h3><div class="pill">Government</div><p>Federal Funding &amp; Support</p></div>
+    </div>
+
+    <div class="wrap narrow" style="padding:0;margin-top:64px">
+      <div class="section-head reveal">
+        <div class="kicker">For Partners</div>
+        <h2>Partner Interest</h2>
+        <p>Industry associations, academic institutions, government agencies, and service providers interested in supporting the initiative are invited to connect with us.</p>
       </div>
-      <div class="field"><label for="p-message">How would you like to support the initiative? *</label><textarea id="p-message" name="message" rows="4" required></textarea></div>
-      <button type="submit" class="btn btn-primary">Submit Partner Interest</button>
-      <p class="form-status" id="p-status" hidden></p>
-    </form>
-    <p class="fineprint reveal">Interest submitted here is informational only. Any selection of vendors, consultants, or service providers will be made through an appropriate open process consistent with applicable grant requirements (see Open Calls &amp; Procurement below).</p>
+      <form class="form-card reveal" name="partner-interest" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="return handleFormSubmit(event)">
+        <input type="hidden" name="form-name" value="partner-interest">
+        <p style="display:none"><label>Don't fill this out: <input name="bot-field"></label></p>
+        <div class="form-grid">
+          <div class="field"><label for="p-org">Organization name *</label><input id="p-org" name="organization" type="text" required></div>
+          <div class="field"><label for="p-name">Contact name *</label><input id="p-name" name="contact_name" type="text" required></div>
+          <div class="field"><label for="p-email">Email *</label><input id="p-email" name="email" type="email" required></div>
+          <div class="field"><label for="p-type">Partner type *</label>
+            <select id="p-type" name="partner_type" required>
+              <option value="">Select…</option>
+              <option>Industry Association</option>
+              <option>Academic Institution</option>
+              <option>Government Agency</option>
+              <option>Vendor / Service Provider</option>
+              <option>Consultant</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="field"><label for="p-message">How would you like to support the initiative? *</label><textarea id="p-message" name="message" rows="4" required></textarea></div>
+        <button type="submit" class="btn btn-primary">Submit Partner Interest</button>
+        <p class="form-status" id="p-status" hidden></p>
+      </form>
+      <p class="fineprint reveal">Interest submitted here is informational only. Any selection of vendors, consultants, or service providers will be made through an appropriate open process consistent with applicable grant requirements (see Open Calls &amp; Procurement below).</p>
+    </div>
   </div>
 </section>
 
