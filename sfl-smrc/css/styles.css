@@ -249,6 +249,8 @@ fieldset.field{border:0;padding:0}
 .support-note strong{color:#fff}
 .support-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
 .support-card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);border-radius:var(--radius);padding:26px;text-align:left}
+.support-card .logobox{height:60px;display:flex;align-items:center;justify-content:flex-start;margin-bottom:14px;background:#fff;border-radius:8px;padding:8px 12px;width:fit-content}
+.support-card .logobox img{max-height:44px;max-width:150px;object-fit:contain}
 .support-role{display:inline-block;background:rgba(11,197,234,.18);color:var(--cyan);font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:5px 12px;border-radius:999px;margin-bottom:12px}
 .support-card h4{color:#fff;font-size:1.08rem;margin-bottom:8px}
 .support-card p{color:#b9cbea;font-size:.9rem}
