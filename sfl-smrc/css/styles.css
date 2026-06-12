@@ -175,7 +175,7 @@ section{padding:84px 0}
 
 /* Footer */
 footer{background:#06152e;color:#9fb3d4;padding:64px 0 28px;font-size:.92rem}
-.foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:40px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.1)}
+.foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr 1fr;gap:40px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.1)}
 .foot-brand .brand .name{color:#fff}
 .foot-brand .brand .sub{color:#7e96bd}
 .foot-brand h4{color:#fff;font-size:1rem;margin:18px 0 10px}
