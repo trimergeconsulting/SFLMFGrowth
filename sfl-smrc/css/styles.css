@@ -271,3 +271,12 @@ fieldset.field{border:0;padding:0}
   .form-grid,.checks{grid-template-columns:1fr}
   .form-card{padding:26px 20px}
 }
+/* Program Reach table */
+.reach-table{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-sm)}
+.reach-row{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:18px 26px;border-bottom:1px solid var(--line)}
+.reach-row:last-child{border-bottom:0}
+.reach-row span:first-child{color:var(--slate);font-weight:500}
+.reach-head{background:var(--navy);color:#fff}
+.reach-head span{color:#fff!important;font-family:var(--display);font-weight:700;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase}
+.reach-val{font-family:var(--display);font-weight:800;font-size:1.3rem;background:linear-gradient(120deg,var(--blue),var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent;white-space:nowrap}
+.reach-row:nth-child(even){background:var(--bg-soft)}
