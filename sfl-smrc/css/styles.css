@@ -280,3 +280,11 @@ fieldset.field{border:0;padding:0}
 .reach-head span{color:#fff!important;font-family:var(--display);font-weight:700;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase}
 .reach-val{font-family:var(--display);font-weight:800;font-size:1.3rem;background:linear-gradient(120deg,var(--blue),var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent;white-space:nowrap}
 .reach-row:nth-child(even){background:var(--bg-soft)}
+/* Engineering & Innovation (FIU) */
+.eng-grid{display:grid;grid-template-columns:300px 1fr;gap:40px;align-items:start}
+.eng-logo{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:36px;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow-sm);position:sticky;top:100px}
+.eng-logo img{max-width:100%;height:auto}
+@media(max-width:900px){
+  .eng-grid{grid-template-columns:1fr}
+  .eng-logo{position:static}
+}
